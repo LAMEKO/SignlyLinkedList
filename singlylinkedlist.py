@@ -86,7 +86,7 @@ class SinglyLinkedList:
             cur = cur.next
 
     def __getitem__(self, index):
-        if 0 < index <= len(self):
+        if 0 < index < len(self):
             count = 0
             cur = self.head
             while cur:
